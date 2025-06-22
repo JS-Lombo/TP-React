@@ -1,0 +1,157 @@
+/* Estilos principales de la App */
+.todo-app-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.todo-app {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+}
+
+.app-header {
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.app-header p {
+  margin: 5px 0 0 0;
+  color: var(--text-color-light);
+}
+
+/* Estilos del Formulario para Agregar Tareas */
+.add-task-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.add-task-input {
+  flex-grow: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px 0 0 8px;
+}
+
+.add-task-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Estilos de los Botones de Filtro */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.filter-buttons button {
+  background: none;
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--text-color-light);
+}
+
+.filter-buttons button.active {
+  color: var(--primary-color);
+  background-color: #e0e7ff;
+}
+
+/* Estilos de la Lista de Tareas */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-color-light);
+}
+
+/* Estilos de cada Tarea (TaskItem) */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: var(--text-color-light);
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.task-item.completed .checkbox {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.task-item.completed .checkbox::after {
+  content: '✔';
+  color: white;
+  font-size: 14px;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 1.5rem;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.task-item:hover .delete-button {
+  visibility: visible;
+  opacity: 1;
+}
