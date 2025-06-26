@@ -1,0 +1,38 @@
+
+
+
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #af621e;
+    border: 3px solid;
+    width: 100%;
+    
+}
+
+
+.navigation__list{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 200px;
+    padding: 1px 0;
+    list-style: none;
+    margin: 0;
+
+}
+
+.navigation-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    cursor: pointer; 
+    color: black;
+    transition: 0.2;
+}
+
+.navigation-item:hover{
+    color: rgba(31, 31, 113, 0.721);
+}

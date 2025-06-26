@@ -1,0 +1,54 @@
+
+.cardPartidas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 240px;        
+    padding: 2px;       
+    background-color: #ccc9c9;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
+    gap: 20px;  
+}
+
+.cardPartidas header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardPartidas strong{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: larger;
+    padding-top: 4px;
+}
+
+
+.cardPartidas span {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    padding: 4px;
+}
+
+.cardPartidas img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;        /* permite que se acomoden en varias filas si no entran */
+    justify-content: center;
+    /*background-color: black;*/
+    gap: 60px;
+    padding: 20px;
+}
+
