@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Giga", serif;
+}
+
+.container {
+    padding: 30px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.btnContainer {
+    width: 100%;
+    max-width: 600px;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.newTask, .task{
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.inputTask:focus {
+    outline: none;
+}
+
+.btnTask {
+    transition: 0.3s;
+}
+
+.btnClear {
+    transition: 0.3s;
+}
+
+
+.tasksList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 23px;
+}
+
+.btnsTask {
+    display: flex;
+    gap: 20px;
+}
+
+.btnDelete, .btnEdit {
+    padding: 5px;
+    font-size: 16px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.mainTheme-primaryColor {
+    background-color: #DDEB9D;
+}
+
+.mainTheme-secondaryColor {
+    background-color: #143D60;
+}
+
+.mainTheme-terciaryColor {
+    color: #DDEB9D;
+}
+
+.mainTheme-mainBorder{
+    border: 2px solid #A0C878;
+}
+
+.mainTheme-inputTask {
+    border: 2px solid #27667B;
+    background-color: #27667B;
+    color: #A0C878;
+}
+
+.mainTheme-inputTask:focus {
+    border: 2px solid #A0C878;
+}
+
+.mainTheme-inputTask::placeholder {
+    color: #A0C878;
+}
+
+.mainTheme-btnTask {
+    background-color: #A0C878;
+    color: #143D60;
+}
+
+.mainTheme-btnClear {
+    background-color: #143D60;
+    color: #A0C878;
+}
+
+.mainTheme-btnTask:active, .mainTheme-btns-task:active {
+    background-color: #143D60;
+    color: #A0C878;
+}
+
+.mainTheme-btnClear:active {
+    background-color: #A0C878;
+    color: #143D60;
+}
+
+.mainTheme-task {
+    border: 2px solid #DDEB9D;
+    color: #A0C878;
+}
+
+.mainTheme-btns-task {
+    background-color: #A0C878;
+    color: #143D60;
+    border: 1px solid #A0C878;
+}
+
+.secondaryTheme-primaryColor {
+    background-color: #DCD7C9;
+}
+
+.secondaryTheme-secondaryColor {
+    background-color: #2C3930;
+}
+
+.secondaryTheme-terciaryColor {
+    color: #DCD7C9;
+}
+
+.secondaryTheme-mainBorder{
+    border: 2px solid #A27B5C;
+}
+
+.secondaryTheme-inputTask {
+    border: 2px solid #3F4F44;
+    background-color: #3F4F44;
+    color: #A27B5C;
+}
+
+.secondaryTheme-inputTask:focus {
+    border: 2px solid #A27B5C;
+}
+
+.secondaryTheme-inputTask::placeholder {
+    color: #A27B5C;
+}
+
+.secondaryTheme-btnTask {
+    background-color: #A27B5C;
+    color: #2C3930;
+}
+
+.secondaryTheme-btnClear {
+    background-color: #2C3930;
+    color: #A27B5C;
+}
+
+.secondaryTheme-btnTask:active, .mainTheme-btns-task:active {
+    background-color: #2C3930;
+    color: #A27B5C;
+}
+
+.secondaryTheme-btnClear:active {
+    background-color: #A27B5C;
+    color: #2C3930;
+}
+
+.secondaryTheme-task {
+    border: 2px solid #DCD7C9;
+    color: #A27B5C;
+}
+
+.secondaryTheme-btns-task {
+    background-color: #A27B5C;
+    color: #2C3930;
+    border: 1px solid #A27B5C;
+}
+
+.btnTheme {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px rgba(211, 204, 204, 0.856);
+    border: none;
+    align-self: flex-end;
+}
+
+.mainTheme-btnTheme {
+    background-image: linear-gradient(to right, #A0C878, #143D60);
+}
+
+.secondaryTheme-btnTheme {
+    background-image: linear-gradient(to right, #A27B5C, #2C3930);
+}
+
+.mainTheme-btnTheme:active {
+    background-image: linear-gradient(to right, #A27B5C, #2C3930);
+}
+
+.secondaryTheme-btnTheme:active {
+    background-image: linear-gradient(to right, #A0C878, #143D60);
+}
+
+@media only screen and (min-width: 769px) {
+
+    .mainTheme-btnTask:hover, .mainTheme-btns-task:hover {
+        background-color: #143D60;
+        color: #A0C878;
+    }
+    
+    .mainTheme-btnClear:hover {
+        background-color: #A0C878;
+        color: #143D60;
+    }
+
+    .secondaryTheme-btnTask:hover, .secondaryTheme-btns-task:hover {
+        background-color: #2C3930;
+        color: #A27B5C;
+    }
+    
+    .secondaryTheme-btnClear:hover {
+        background-color: #A27B5C;
+        color: #2C3930;
+    }
+
+    .mainTheme-btnTheme:hover {
+        background-image: linear-gradient(to right, #A27B5C, #2C3930);
+    }
+    
+    .secondaryTheme-btnTheme:hover {
+        background-image: linear-gradient(to right, #A0C878, #143D60);
+    }
+}
