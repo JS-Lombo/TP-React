@@ -1,0 +1,23 @@
+.App  h1 {
+  text-align: center;
+}
+
+.container{
+
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+.button{
+  display: block;         
+  margin: 20px auto;    
+  padding: 10px 20px;   
+  text-align: center;    
+  border: none;          
+  border-radius: 5px;   
+  cursor: pointer; 
+}

@@ -1,0 +1,29 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import players from './components/data/players.js'
+import PlayerView from './views/PlayerView.jsx'
+
+const routes = [
+  {
+    path: "/",
+    element: <App />,
+  }
+];
+
+players.forEach( player => {
+  routes.push({
+    path: player.name,
+    element: <PlayerView  player={player}/>
+  });
+});
+
+const router = createBrowserRouter(routes)
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <RouterProvider router={router}/>
+  </StrictMode>,
+)
